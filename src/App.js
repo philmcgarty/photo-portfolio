@@ -5,8 +5,8 @@ import Nav from './components/Nav';
 function App() {
   return (
     <div>
-      <main>
-        <Nav></Nav>
+      <Nav></Nav>
+      <main>       
         <About></About>
       </main>
     </div>

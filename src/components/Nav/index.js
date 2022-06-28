@@ -3,19 +3,19 @@ import React from "react";
 function Nav (){
     const categories = [
         {
-            name: "commercial",
+            name: "Commercial",
             description: "Photos of grocery stores, food trucks, and other commercial projects",
         },
         {
-            name: "portraits",
+            name: "Portraits",
             description: "Portraits of people in my life"
         },
         {
-            name: "food",
+            name: "Food",
             description: "Delicious delicacies"
         },
         {
-            name: "landscape",
+            name: "Landscape",
             description: "Fields, farmhouses, waterfalls, and the beauty of nature"
         }
     ];
@@ -25,7 +25,7 @@ function Nav (){
     }
 
     return(
-        <header>
+        <header data-testid="header" className="flex-row px-1">
             <h2>
                 <a href="/">
                     <span role="img" aria-label="camera"> 📸</span> Oh Snap!
