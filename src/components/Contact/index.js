@@ -9,7 +9,6 @@ function ContactForm(){
     function handleChange(e) {
         if(e.target.name === 'email'){
             const isValid = validateEmail(e.target.value);
-            //console.log(isValid);
             if (!isValid){
                 setErrorMessage('Your email is invalid.');
             } else {
@@ -25,13 +24,11 @@ function ContactForm(){
         if (!errorMessage){
             setFormState({...formState, [e.target.name]: e.target.value });
         }
-        
-        // console.log('errorMessage', errorMessage);
-
     }
 
-    // console.log(formState)
+    console.log(formState)
 
+    
     function handleSubmit(e){
         e.preventDefault();
         console.log(formState);
